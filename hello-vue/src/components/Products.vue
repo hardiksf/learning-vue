@@ -2,7 +2,7 @@
   <div>
     <div class="shopping-cart">
       <font-awesome-icon :icon="['fas', 'shopping-cart']" />
-      {{ cartSet.size }}
+      {{ cart.length }}
     </div>
     <label class="font-weight-bold">
       Maximum price:
@@ -28,7 +28,7 @@
           <div class="description text-body">{{ product.description }}</div>
           <div class="price-cart-button">
             <h3 class="price">${{ product.price }}</h3>
-            <button class="add-to-cart" @click="cartSet.add(product)">
+            <button class="add-to-cart" @click="addItem(product)">
               Add to cart
               <font-awesome-icon :icon="['fas', 'cart-plus']" />
             </button>
@@ -52,7 +52,7 @@ export default {
     return {
       products: null,
       maximum: this.getHighestPrice(),
-      cartSet: new Set()
+      cart: []
     };
   },
   methods: {
@@ -63,6 +63,9 @@ export default {
           return item.price;
         })
       );
+    },
+    addItem: function(item) {
+      this.cart.push(item);
     }
   },
   computed: {
