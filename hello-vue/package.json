@@ -46,7 +46,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+              "tabWidth": 4
+            }
+          ]
+    },
     "overrides": [
       {
         "files": [
