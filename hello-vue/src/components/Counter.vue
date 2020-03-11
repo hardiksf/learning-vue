@@ -1,7 +1,7 @@
 <template>
   <div class="component-border">
     <h2>Counter Component</h2>
-    <p>Increments following text by 1 upon button click</p>
+    <p>Increments following text by {{ addNum }} upon button click</p>
     <p class="counter">{{ count }}</p>
     <button type="button" class="btn btn-info" @click="increment">
       Increment above text
@@ -11,6 +11,12 @@
 
 <script>
 export default {
+  props: {
+    addNum: {
+      type: Number,
+      default: 1
+    }
+  },
   data() {
     return {
       count: 0
@@ -18,7 +24,7 @@ export default {
   },
   methods: {
     increment() {
-      this.count++;
+      this.count += Number(this.addNum);
     }
   }
 };

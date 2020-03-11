@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <products></products>
+    <!-- <products></products> -->
     <HelloWorld msg="Hello!" />
-    <counter></counter>
+    <counter addNum="10"></counter>
     <toggle title="Toggle Component"></toggle>
   </div>
 </template>
@@ -11,15 +11,15 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Counter from "./components/Counter.vue";
 import Toggle from "./components/Toggle.vue";
-import Products from "./components/Products.vue";
+// import Products from "./components/Products.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     Counter,
-    Toggle,
-    Products
+    Toggle
+    // Products
   }
 };
 </script>
