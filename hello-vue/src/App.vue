@@ -1,28 +1,29 @@
 <template>
     <div id="app">
-        <!-- <products></products> -->
-        <HelloWorld msg="Hello!" />
-        <counter :addNum="10"></counter>
-        <toggle title="Toggle Component"></toggle>
+        <!-- <counter :addNum="10"></counter>
+        <HelloWorld msg="Hello!" /> -->
         <notes></notes>
+        <!-- <products></products>
+        <toggle title="Toggle Component"></toggle> -->
     </div>
 </template>
 
+//
 <script>
-import Counter from "./components/Counter.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+// import Counter from "./components/Counter.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import Notes from "./components/Notes.vue";
-import Toggle from "./components/Toggle.vue";
 // import Products from "./components/Products.vue";
+// import Toggle from "./components/Toggle.vue";
 
 export default {
     name: "App",
     components: {
-        Counter,
-        HelloWorld,
-        Notes,
-        Toggle
-        // Products
+        // Counter,
+        // HelloWorld,
+        Notes
+        // Products,
+        // Toggle
     }
 };
 </script>
