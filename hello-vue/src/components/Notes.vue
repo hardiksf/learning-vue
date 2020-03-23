@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="notes">
         <h2>Notes</h2>
         <div class="text-button">
             <textarea

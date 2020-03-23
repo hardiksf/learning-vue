@@ -3,6 +3,7 @@
         <!-- <counter :addNum="10"></counter>
         <HelloWorld msg="Hello!" /> -->
         <notes></notes>
+        <writing-paper></writing-paper>
         <!-- <products></products>
         <toggle title="Toggle Component"></toggle> -->
     </div>
@@ -15,13 +16,15 @@
 import Notes from "./components/Notes.vue";
 // import Products from "./components/Products.vue";
 // import Toggle from "./components/Toggle.vue";
+import WritingPaper from "./components/WritingPaper.vue";
 
 export default {
     name: "App",
     components: {
         // Counter,
         // HelloWorld,
-        Notes
+        Notes,
+        WritingPaper
         // Products,
         // Toggle
     }
@@ -35,7 +38,7 @@ export default {
   -moz-osx-font-smoothing: grayscale
   text-align: center
   color: #2c3e50
-  margin-top: 60px
+//   margin-top: 60px
 
 .component-border
     border: solid 1pt grey
@@ -45,4 +48,8 @@ export default {
     button
         font-weight: 700
         text-transform: uppercase
+
+
+.notes
+    display: none
 </style>
