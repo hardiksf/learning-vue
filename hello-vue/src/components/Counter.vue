@@ -1,5 +1,5 @@
 <template>
-    <div class="component-border">
+    <div class="component-component">
         <h2>Counter Component</h2>
         <p>Increments following text by {{ addNum }} upon button click</p>
         <p class="counter">{{ count }}</p>

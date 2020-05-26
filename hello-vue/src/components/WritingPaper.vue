@@ -1,8 +1,13 @@
 <template>
-    <div>
+    <div class="writing-paper">
         <div class="name">
             <h2>Name</h2>
-            <div class="name-box" id="square"></div>
+            <div class="name-field">
+                <div class="solid"></div>
+                <div class="dashed"></div>
+                <div class="solid"></div>
+                <div class="none"></div>
+            </div>
         </div>
         <div class="picture-box"></div>
         <div class="solid"></div>
@@ -25,10 +30,6 @@
         <div class="solid"></div>
         <div class="none"></div>
 
-        <div class="solid"></div>
-        <div class="dashed"></div>
-        <div class="solid"></div>
-        <div class="none"></div>
     </div>
 </template>
 
@@ -46,16 +47,18 @@ export default {
 .name
     display: inline-flex
     padding-bottom: 30px
-.name-box
+    h2
+        margin-top: 1vw
+        margin-right: 1vw
+.name-field
     width: 300px
-    height: 50px
-    border: 1px solid
-    margin: 0 auto
-    margin-left: 10px
+.name-field
+    .solid, .dashed
+        height: 1rem
 .picture-box
-    width: 900px
-    height: 600px
-    border: 1px solid
+    width: 1000px
+    height: 750px
+    border-top: 1px solid
     margin: 0 auto
 .solid
     border-bottom: 1px solid

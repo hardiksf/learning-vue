@@ -1,32 +1,35 @@
 <template>
     <div id="app">
-        <!-- <counter :addNum="10"></counter>
-        <HelloWorld msg="Hello!" /> -->
+        <counter :addNum="10"></counter>
+        <HelloWorld msg="Hello!" />
+        <grid></grid>
         <notes></notes>
         <writing-paper></writing-paper>
-        <!-- <products></products>
-        <toggle title="Toggle Component"></toggle> -->
+        <products></products>
+        <toggle title="Toggle Component"></toggle>
     </div>
 </template>
 
 //
 <script>
-// import Counter from "./components/Counter.vue";
-// import HelloWorld from "./components/HelloWorld.vue";
+import Counter from "./components/Counter.vue";
+import Grid from "./components/Grid.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 import Notes from "./components/Notes.vue";
-// import Products from "./components/Products.vue";
-// import Toggle from "./components/Toggle.vue";
+import Products from "./components/Products.vue";
+import Toggle from "./components/Toggle.vue";
 import WritingPaper from "./components/WritingPaper.vue";
 
 export default {
     name: "App",
     components: {
-        // Counter,
-        // HelloWorld,
+        Counter,
+        Grid,
+        HelloWorld,
         Notes,
-        WritingPaper
-        // Products,
-        // Toggle
+        WritingPaper,
+        Products,
+        Toggle
     }
 };
 </script>
@@ -50,6 +53,12 @@ export default {
         text-transform: uppercase
 
 
+.component-component
+    display: none
+.grid
+    display: none
 .notes
+    display: none
+.writing-paper
     display: none
 </style>
